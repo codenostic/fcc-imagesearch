@@ -16,8 +16,11 @@ app.use(express.static('public'))
 app.get("/", (request, response) => {
   response.sendFile(__dirname + '/views/index.html')
 })
-// app.get('/api/imagesearch', searchController.search);
+
+app.get('/api/imagesearch', searchController.search);
 app.get('/api/latest/imagesearch', searchController.history);
+
+
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
   console.log(`Your app is listening on port ${listener.address().port}`)
