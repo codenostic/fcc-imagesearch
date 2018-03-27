@@ -1,4 +1,10 @@
 {
 	"optOut": false,
-	"lastUpdateCheck": 1521024829832
+	"lastUpdateCheck": 1522142240342,
+	"update": {
+		"latest": "1.37.3",
+		"current": "1.36.2",
+		"type": "minor",
+		"name": "pnpm"
+	}
 }
