@@ -1,3 +1,4 @@
+
 <!-- This is a static file -->
 <!-- served from your routes in server.js -->
 
@@ -10,24 +11,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FCC Image Search API</title>
+    <title>FCC Image Search Service</title>
     <meta name="description" content="A cool thing made with Glitch">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        FreeCodeCamp Image Search API
-      </h1>
-    </header>
-    
-    <main>
-      
-    </main>
+        <div class="container">
+            <h1 class="header">
+                Image Search Abstraction layer
+            </h1>
+            <blockquote>
+                User stories:
+                <ol>
+                  <li>Get list of image search results for a query string</li>
+                  <li>Get list of latest searches</li>
+                  <li>Paginate your query by passing a paramater offset=number</li>
+                </ol>
+                
+            </blockquote>
+            <h3>Example usage:</h3>
+            1) Image Search Query : <code>https://fcc-imagesearch-api.glitch.me/api/imagesearch?query=localcat</code><br>
+            2) <code>https://fcc-header-ms.glitch.me/12435</code>
+            <h3>Example output:</h3>
+            1) <code>https://fcc-header-ms.glitch.me/12435</code><br>
+            2) Redirected to http://google.com
+    </div>
 
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
   </body>
 </html>
