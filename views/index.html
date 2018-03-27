@@ -28,18 +28,50 @@
             <blockquote>
                 User stories:
                 <ol>
-                  <li>Get list of image search results for a query string</li>
+                  <li>Get list of image search results(image url, alt text, page url) for a query string</li>
                   <li>Get list of latest searches</li>
                   <li>Paginate your query by passing a paramater offset=number</li>
                 </ol>
                 
             </blockquote>
             <h3>Example usage:</h3>
-            1) Image Search Query : <code>https://fcc-imagesearch-api.glitch.me/api/imagesearch?query=localcat</code><br>
-            2) <code>https://fcc-header-ms.glitch.me/12435</code>
+            1) Image Search Query : <code>https://fcc-imagesearch-api.glitch.me/api/imagesearch?query=scarycat&offset=2</code><br>
+            2) Latest Search Strings: <code>https://fcc-imagesearch-api.glitch.me/api/latest/imagesearch</code>
             <h3>Example output:</h3>
-            1) <code>https://fcc-header-ms.glitch.me/12435</code><br>
-            2) Redirected to http://google.com
+            1) <code>[	{
+		"url": "https://img.scoop.it/nCDfJ08MpKhEdCcEztDllTl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9",
+		"snippet": "Lolcats: Trust me. - Lolcats - Funny Pictures o...",
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlqyqamk-b85EzibpHcYlfc6i8luNd803igOeN9NL2g5C_I5-oa2P1A",
+		"context": "https://www.scoop.it/t/crazy-cats/p/1661402930/2012/04/25/lolcats-trust-me-lolcats-funny-pictures-of-cats-i-can-has"
+	},
+	{
+		"url": "https://i.ytimg.com/vi/tRzXptpC3_U/hqdefault.jpg",
+		"snippet": "funny lolcats and loldogs - YouTube",
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dKvb6pMA0bod00g0v1Bk3YakSY7H4HYwpu268AqUK8pPiSdlUh9pEnYh",
+		"context": "https://www.youtube.com/watch?v=tRzXptpC3_U"
+	}]</code><br>
+            2) <code>[[
+	{
+		"term": "indonesia",
+		"when": "2018-03-27T09:53:33.808Z"
+	},
+	{
+		"term": "lolcats funny",
+		"when": "2018-03-27T09:51:16.028Z"
+	},
+	{
+		"term": "lolcats funny",
+		"when": "2018-03-27T09:51:11.928Z"
+	},
+	{
+		"term": "indonesia",
+		"when": "2018-03-27T09:50:00.238Z"
+	},
+	{
+		"term": "indonesia",
+		"when": "2018-03-27T09:49:34.341Z"
+	},
+]</code>
     </div>
 
     <!-- Your web-app is https, so your scripts need to be too -->
