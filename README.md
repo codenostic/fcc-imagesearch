@@ -1,5 +1,8 @@
 FreeCodeCamp Image Search Abstraction layer
 ===========================================
+
+Note: To view application in live mode - click "LIVE" button on top
+
 User Stories
 1) Get image search results for search query 
 2) Can paginate by passing a parameter on number of search results needed(default = 10)
