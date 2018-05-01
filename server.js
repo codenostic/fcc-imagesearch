@@ -18,7 +18,7 @@ db.on('errors', console.error.bind(console, 'connection error:'))
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
